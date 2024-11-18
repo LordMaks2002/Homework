@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Demo Home'),
     );
   }
 }
@@ -48,15 +48,15 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
+          children: <Widget>[
             Text(
               'Концький Максим',
               style: TextStyle(
-                fontSize: 24, // Збільшений розмір шрифту
-                fontWeight: FontWeight.bold, // Жирний шрифт
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],
